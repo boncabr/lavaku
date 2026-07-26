@@ -1,0 +1,637 @@
+2026-07-26T05:02:50.017372428Z [inf]  Starting Container
+2026-07-26T05:02:51.609508332Z [inf]  2026-07-26T05:02:51.054Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:02:51.609512672Z [inf]  2026-07-26T05:02:51.071Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:02:51.917485158Z [inf]  2026-07-26T05:02:51.911Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:02:52.266201803Z [inf]  2026-07-26T05:02:52.235Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/dev/lavalink/youtube/youtube-plugin/1.18.1/youtube-plugin-1.18.1.jar
+2026-07-26T05:02:54.689719402Z [inf]  2026-07-26T05:02:54.654Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavasrc/lavasrc-plugin/4.8.3/lavasrc-plugin-4.8.3.jar
+2026-07-26T05:02:56.063120650Z [inf]  2026-07-26T05:02:56.056Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:02:56.240887378Z [inf]  2026-07-26T05:02:56.234Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:02:56.245207702Z [inf]  2026-07-26T05:02:56.243Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:02:56.245212692Z [inf]  
+2026-07-26T05:02:56.245215742Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:02:56.271252241Z [inf]  2026-07-26T05:02:56.259Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:02:56.271255341Z [inf]  
+2026-07-26T05:02:56.271258451Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:02:56.271260701Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271263331Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271265651Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271268861Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271271331Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271273791Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271276051Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.271278921Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.274519774Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.274524814Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.274528334Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.274531794Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:02:56.274534774Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:02:56.274569394Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:02:56.274572654Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:02:56.274575994Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:02:56.274578905Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.274581775Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.274584905Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.274588295Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.274591765Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:02:56.274994091Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:02:56.274999941Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:02:56.275005471Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:02:56.275010661Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:02:56.275015941Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.275020421Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.275025821Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.275031431Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275034211Z [inf]  	... 23 common frames omitted
+2026-07-26T05:02:56.275041641Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275043121Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:02:56.275048561Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275052661Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275055591Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.275867014Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.275872694Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.275878044Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.275883484Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:02:56.275888803Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275893983Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275898523Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:02:56.275903233Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:02:56.275908143Z [inf]  	... 25 common frames omitted
+2026-07-26T05:02:56.275913473Z [inf]  
+2026-07-26T05:02:58.727366860Z [inf]  2026-07-26T05:02:58.723Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:02:58.727371010Z [inf]  2026-07-26T05:02:58.726Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:02:59.703947667Z [inf]  2026-07-26T05:02:59.631Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:02:59.952357173Z [inf]  2026-07-26T05:02:59.945Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:02:59.952362203Z [inf]  2026-07-26T05:02:59.945Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:01.166546288Z [inf]  2026-07-26T05:03:01.158Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:01.343849360Z [inf]  2026-07-26T05:03:01.337Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:01.348730640Z [inf]  2026-07-26T05:03:01.345Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:01.348736650Z [inf]  
+2026-07-26T05:03:01.348740570Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:01.388164358Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388197737Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388199637Z [inf]  2026-07-26T05:03:01.365Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:01.388208067Z [inf]  
+2026-07-26T05:03:01.388211207Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388214727Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:01.388218187Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388222497Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388225057Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388228157Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388234167Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388890222Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388896142Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388900652Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.388905192Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:01.388908852Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:01.388912082Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:01.388915272Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:01.388918292Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:01.388921992Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.388925452Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.388929532Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.388932962Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.388936322Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:01.389510567Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:01.389514357Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:01.389518397Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:01.389521967Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:01.389526377Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.389531087Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.389535157Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.389539817Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:01.389544017Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:01.389547757Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.389552627Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.389557297Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.389560747Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.389564017Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.390296740Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.390300480Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.390303060Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.390305850Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:01.390308220Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.390311420Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.390314100Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:01.390316690Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:01.390318790Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:01.390320890Z [inf]  
+2026-07-26T05:03:03.478409868Z [inf]  2026-07-26T05:03:03.475Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:03.517302680Z [inf]  2026-07-26T05:03:03.499Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:04.398859569Z [inf]  2026-07-26T05:03:04.377Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:04.822596726Z [inf]  2026-07-26T05:03:04.684Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:04.822601106Z [inf]  2026-07-26T05:03:04.684Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:05.861743160Z [inf]  2026-07-26T05:03:05.860Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:06.045170925Z [inf]  2026-07-26T05:03:06.042Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:06.049595338Z [inf]  2026-07-26T05:03:06.048Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:06.049599308Z [inf]  
+2026-07-26T05:03:06.049601957Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:06.070568305Z [inf]  2026-07-26T05:03:06.065Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:06.070572615Z [inf]  
+2026-07-26T05:03:06.070575755Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:06.070578655Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070581495Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070584245Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070597165Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070600275Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070602795Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070605595Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.070608175Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.071594587Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.071606197Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.071611837Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.071616347Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:06.071620687Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:06.071624927Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:06.071630057Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:06.071636447Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:06.071641427Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.071645967Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.071650277Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.071653967Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.071658047Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:06.072699228Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:06.072704018Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:06.072707478Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:06.072711238Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:06.072713968Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.072716498Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.072720718Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.072723258Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:06.072726118Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:06.072728738Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.072731617Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.072734157Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.072736697Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.072739507Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.073154734Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.073157524Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.073160264Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.073162674Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:06.073165344Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.073168434Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.073171104Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:06.073173494Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:06.073175974Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:06.073178744Z [inf]  
+2026-07-26T05:03:08.187225522Z [inf]  2026-07-26T05:03:08.176Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:08.187228512Z [inf]  2026-07-26T05:03:08.178Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:09.064585745Z [inf]  2026-07-26T05:03:09.059Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:09.358653471Z [inf]  2026-07-26T05:03:09.352Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:09.358661091Z [inf]  2026-07-26T05:03:09.352Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:10.564118137Z [inf]  2026-07-26T05:03:10.549Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:10.904322679Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:10.904334169Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.904339449Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.904344089Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.904348499Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.904356659Z [inf]  2026-07-26T05:03:10.730Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:10.904361548Z [inf]  2026-07-26T05:03:10.737Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:10.904367358Z [inf]  
+2026-07-26T05:03:10.904371478Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:10.904375838Z [inf]  2026-07-26T05:03:10.752Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:10.904380758Z [inf]  
+2026-07-26T05:03:10.905265741Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905269811Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905272621Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905275611Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905278100Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905281130Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905284820Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.905288400Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:10.905290810Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:10.905293300Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:10.905295800Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:10.906446720Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:10.906454390Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.906460010Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.906461050Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:10.906465160Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.906469100Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.906472630Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:10.906475990Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:10.906479340Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:10.906482500Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:10.906485890Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:10.906491310Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.906494480Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.906497150Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.907331154Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:10.907334544Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907337914Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907341094Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907345574Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907348953Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.907352303Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.907355553Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.907359913Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.907363043Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:10.907365463Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907367803Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907370023Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:10.907372343Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:10.907374973Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:10.908453094Z [inf]  
+2026-07-26T05:03:12.885659646Z [inf]  2026-07-26T05:03:12.871Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:12.885662706Z [inf]  2026-07-26T05:03:12.873Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:13.971144246Z [inf]  2026-07-26T05:03:13.757Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:14.050114251Z [inf]  2026-07-26T05:03:14.048Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:14.050119101Z [inf]  2026-07-26T05:03:14.048Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:15.230136553Z [inf]  2026-07-26T05:03:15.223Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:15.415074567Z [inf]  2026-07-26T05:03:15.404Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:15.415077217Z [inf]  2026-07-26T05:03:15.411Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:15.415079767Z [inf]  
+2026-07-26T05:03:15.415083107Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:15.438015825Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438025336Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438029316Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438033036Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438038276Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438040506Z [inf]  2026-07-26T05:03:15.428Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:15.438041836Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438051616Z [inf]  
+2026-07-26T05:03:15.438055976Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:15.438059636Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.438063726Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439015338Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439019528Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439022948Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439026748Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:15.439030678Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:15.439034107Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:15.439038707Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:15.439042167Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:15.439045757Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.439049047Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.439052207Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439055477Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439058887Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:15.439733941Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:15.439736671Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:15.439740011Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:15.439742861Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:15.439745461Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439748251Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439750721Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.439752931Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:15.439755281Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:15.439757591Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439759891Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439762511Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439764571Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.439767021Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.440953992Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.440958672Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.440962022Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.440964582Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:15.440967432Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.440969872Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.440973362Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:15.440975632Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:15.440977812Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:15.440980522Z [inf]  
+2026-07-26T05:03:17.523612489Z [inf]  2026-07-26T05:03:17.513Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:17.523620039Z [inf]  2026-07-26T05:03:17.515Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:18.489715505Z [inf]  2026-07-26T05:03:18.457Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:18.818075208Z [inf]  2026-07-26T05:03:18.810Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:18.818086298Z [inf]  2026-07-26T05:03:18.810Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:20.038747068Z [inf]  2026-07-26T05:03:20.011Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:20.196257023Z [inf]  2026-07-26T05:03:20.192Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:20.202981686Z [inf]  2026-07-26T05:03:20.201Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:20.202987606Z [inf]  
+2026-07-26T05:03:20.202990386Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:20.224047670Z [inf]  2026-07-26T05:03:20.218Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:20.224053060Z [inf]  
+2026-07-26T05:03:20.224056180Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:20.224058840Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224061280Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224063860Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224066590Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224069230Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224072050Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224086680Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224089210Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224771715Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224798845Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224804155Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.224808515Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:20.224812825Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:20.224817135Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:20.224822145Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:20.224826714Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:20.224832384Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.224837074Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.224840464Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.224843634Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.224847774Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:20.225902355Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.225907115Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.225910595Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.225914065Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.225937705Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:20.225946315Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:20.225950625Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:20.225954165Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:20.225958324Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.225962134Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.225965374Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.225969204Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:20.225972884Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:20.225976204Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.226448150Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:20.226452480Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:20.226455760Z [inf]  
+2026-07-26T05:03:20.226460010Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.226463340Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.226466630Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.226469590Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:20.226473020Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.226476120Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:20.226479600Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:22.303773468Z [inf]  2026-07-26T05:03:22.301Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:22.304572451Z [inf]  2026-07-26T05:03:22.303Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:23.213999718Z [inf]  2026-07-26T05:03:23.202Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:23.538156841Z [inf]  2026-07-26T05:03:23.527Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:23.538160341Z [inf]  2026-07-26T05:03:23.528Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:24.673636241Z [inf]  2026-07-26T05:03:24.672Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:24.855290967Z [inf]  2026-07-26T05:03:24.853Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:24.869492907Z [inf]  2026-07-26T05:03:24.860Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:24.869499487Z [inf]  
+2026-07-26T05:03:24.869503527Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:24.894940554Z [inf]  2026-07-26T05:03:24.874Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:24.894945334Z [inf]  
+2026-07-26T05:03:24.894948964Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:24.894951684Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894954834Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894959354Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894962664Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894965904Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894968784Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894971374Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.894973964Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.895940905Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.895945115Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.895948565Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.895951115Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:24.895953805Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:24.895957605Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:24.895960855Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:24.895963495Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:24.895966055Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.895968725Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.895971775Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.895974245Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.895977335Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:24.896817049Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:24.896820319Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:24.896823298Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:24.896824588Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.896826268Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:24.896828208Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.896829338Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.896831728Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.896835428Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.896838478Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:24.896874208Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:24.896887388Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.896893778Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.896902878Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.898296625Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.898304125Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.898307965Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.898311295Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:24.898313775Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.898316315Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.898319055Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:24.898322025Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:24.898324975Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:24.898327955Z [inf]  
+2026-07-26T05:03:27.092686077Z [inf]  2026-07-26T05:03:27.072Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:27.092689277Z [inf]  2026-07-26T05:03:27.074Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:28.078858626Z [inf]  2026-07-26T05:03:27.971Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:28.295679399Z [inf]  2026-07-26T05:03:28.294Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:28.295682709Z [inf]  2026-07-26T05:03:28.294Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:29.513497553Z [inf]  2026-07-26T05:03:29.482Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:29.667558533Z [inf]  2026-07-26T05:03:29.666Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:29.679062556Z [inf]  2026-07-26T05:03:29.672Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:29.679067955Z [inf]  
+2026-07-26T05:03:29.679070875Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:29.690556589Z [inf]  2026-07-26T05:03:29.686Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:29.690561829Z [inf]  
+2026-07-26T05:03:29.690564549Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:29.690567759Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690570639Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690573089Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690575649Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690577919Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690580179Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690582449Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.690584739Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.691053035Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.691055845Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.691059315Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.691061585Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:29.691063755Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:29.691066295Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:29.691069355Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:29.691071955Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:29.691074175Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.691076275Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.691078485Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.691080614Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.691083074Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:29.692069856Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:29.692079866Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:29.692084146Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:29.692087946Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:29.692091456Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.692099636Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.692103125Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.692106425Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:29.692110085Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:29.692114555Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692117715Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692121095Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692124925Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692128225Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.692863379Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.692868959Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.692873059Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.692876489Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:29.692880209Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692883819Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692887259Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:29.692890409Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:29.692893519Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:29.692896819Z [inf]  
+2026-07-26T05:03:31.799466244Z [inf]  2026-07-26T05:03:31.785Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:31.799472174Z [inf]  2026-07-26T05:03:31.787Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:32.800523663Z [inf]  2026-07-26T05:03:32.746Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:34.271962406Z [inf]  2026-07-26T05:03:34.253Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:34.441923724Z [inf]  2026-07-26T05:03:34.432Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:34.441927454Z [inf]  2026-07-26T05:03:34.438Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:34.441932114Z [inf]  
+2026-07-26T05:03:34.441937094Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:34.462541609Z [inf]  2026-07-26T05:03:34.453Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:34.462553919Z [inf]  
+2026-07-26T05:03:34.462560739Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:34.462565479Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462571369Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462576369Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462580889Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462585089Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462589729Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462593779Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.462598158Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.463287992Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.463293222Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.463297852Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.463302182Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:34.463306372Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:34.463310672Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:34.463314402Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:34.463318152Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:34.463321592Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.463326742Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.463330622Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.463333972Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.463337622Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:34.464724001Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:34.464728651Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:34.464733271Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:34.464737591Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:34.464741621Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.464745490Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.464749510Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.464753960Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:34.464758170Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:34.464762240Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464766090Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464769950Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464773580Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464777410Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.464781180Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.464784850Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.464788910Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.464793160Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:34.464797080Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464801550Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464805470Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:34.464809380Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:34.464812820Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:34.464816450Z [inf]  
+2026-07-26T05:03:36.613452204Z [inf]  2026-07-26T05:03:36.592Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:36.613458224Z [inf]  2026-07-26T05:03:36.596Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:37.408901949Z [inf]  2026-07-26T05:03:37.406Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:37.728134832Z [inf]  2026-07-26T05:03:37.701Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:37.728137942Z [inf]  2026-07-26T05:03:37.702Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:38.865711414Z [inf]  2026-07-26T05:03:38.856Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:39.035656626Z [inf]  2026-07-26T05:03:39.034Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:39.183179748Z [inf]  2026-07-26T05:03:39.041Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:39.183185388Z [inf]  
+2026-07-26T05:03:39.183193278Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:39.183199108Z [inf]  2026-07-26T05:03:39.055Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:39.183207358Z [inf]  
+2026-07-26T05:03:39.183212647Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:39.183217657Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.183222607Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.183227317Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.183231287Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.183235627Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.183240737Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184919073Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184923743Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184929343Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184932883Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184936653Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.184940723Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:39.184944203Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:39.184947513Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:39.184952773Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:39.184956953Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:39.184960193Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.184963333Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.185914224Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.185919544Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.185923104Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:39.185926444Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:39.185929474Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:39.185932524Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:39.185935874Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:39.185938834Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.185941614Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.185944714Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.185947774Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:39.185950454Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:39.185952954Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.185955214Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186385240Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186389830Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186394230Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.186398320Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.186402730Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.186407710Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.186411760Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:39.186415930Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186420220Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186424390Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:39.186429210Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:39.186433240Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:39.186437510Z [inf]  
+2026-07-26T05:03:41.343234931Z [inf]  2026-07-26T05:03:41.336Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : Starting Launcher v4.2.2 using Java 18.0.2.1 with PID 1 (/opt/Lavalink/Lavalink.jar started by lavalink in /opt/Lavalink)
+2026-07-26T05:03:41.343238781Z [inf]  2026-07-26T05:03:41.338Z  INFO 1 --- [Lavalink] [           main] lavalink.server.Launcher                 : No active profile set, falling back to 1 default profile: "default"
+2026-07-26T05:03:42.399761087Z [inf]  2026-07-26T05:03:42.309Z  INFO 1 --- [Lavalink] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3d6bf653-92ea-3fde-943a-10b9f8cd696e
+2026-07-26T05:03:42.696974215Z [inf]  2026-07-26T05:03:42.639Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'youtube-plugin' version '1.18.1'
+2026-07-26T05:03:42.696977915Z [inf]  2026-07-26T05:03:42.639Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Found plugin 'lavasrc-plugin' version '4.8.3'
+2026-07-26T05:03:43.879304211Z [inf]  2026-07-26T05:03:43.877Z  INFO 1 --- [Lavalink] [           main] l.server.bootstrap.PluginManager         : Downloading https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:44.061866937Z [inf]  2026-07-26T05:03:44.055Z  WARN 1 --- [Lavalink] [           main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:44.069385222Z [inf]  2026-07-26T05:03:44.063Z  INFO 1 --- [Lavalink] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2026-07-26T05:03:44.069394062Z [inf]  
+2026-07-26T05:03:44.069398152Z [inf]  Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-26T05:03:44.087978393Z [inf]  2026-07-26T05:03:44.081Z ERROR 1 --- [Lavalink] [           main] o.s.boot.SpringApplication               : Application run failed
+2026-07-26T05:03:44.087993052Z [inf]  
+2026-07-26T05:03:44.087998942Z [inf]  org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pluginManager': Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:44.088003822Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088008852Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088014202Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088019622Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088023802Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088030852Z [inf]  	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088035782Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088039912Z [inf]  	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088683297Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088687487Z [inf]  	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088690077Z [inf]  	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.088693267Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:44.088695947Z [inf]  	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.9.jar!/:6.1.9]
+2026-07-26T05:03:44.088698417Z [inf]  	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:44.088701797Z [inf]  	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:44.088704527Z [inf]  	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.0.jar!/:3.3.0]
+2026-07-26T05:03:44.088706817Z [inf]  	at lavalink.server.Launcher.launchPluginBootstrap(Launcher.kt:132) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.088709187Z [inf]  	at lavalink.server.Launcher.main(Launcher.kt:125) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.088711907Z [inf]  	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.088714517Z [inf]  	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.088716967Z [inf]  	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:44.089949166Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:44.089960456Z [inf]  	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:44.089965196Z [inf]  	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[Lavalink.jar:4.2.2]
+2026-07-26T05:03:44.089971026Z [inf]  Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0]: Constructor threw exception
+2026-07-26T05:03:44.089974846Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:221) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.089979066Z [inf]  	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.089982806Z [inf]  	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.089986386Z [inf]  	... 23 common frames omitted
+2026-07-26T05:03:44.089989926Z [inf]  Caused by: java.io.FileNotFoundException: https://maven.lavalink.dev/releases/com/github/topi314/lavalyrics/lavalyrics-plugin/1.6.6/lavalyrics-plugin-1.6.6.jar
+2026-07-26T05:03:44.089993366Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.089996366Z [inf]  	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090002536Z [inf]  	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090006455Z [inf]  	at java.base/java.net.URL.openStream(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090009385Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar(PluginManager.kt:135) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.090926598Z [inf]  	at lavalink.server.bootstrap.PluginManager.downloadJar$default(PluginManager.kt:130) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.090929428Z [inf]  	at lavalink.server.bootstrap.PluginManager.manageDownloads(PluginManager.kt:87) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.090932428Z [inf]  	at lavalink.server.bootstrap.PluginManager.<init>(PluginManager.kt:30) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.090935938Z [inf]  	at lavalink.server.bootstrap.PluginManager$$SpringCGLIB$$0.<init>(<generated>) ~[classes!/:4.2.2]
+2026-07-26T05:03:44.090939748Z [inf]  	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090942348Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090945608Z [inf]  	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:na]
+2026-07-26T05:03:44.090948808Z [inf]  	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.15.jar!/:6.1.15]
+2026-07-26T05:03:44.090951918Z [inf]  	... 25 common frames omitted
+2026-07-26T05:03:44.090954978Z [inf]  
