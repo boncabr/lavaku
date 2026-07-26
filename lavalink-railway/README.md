@@ -13,6 +13,19 @@ Self-hosted Lavalink v4 server with YouTube plugin, LavaSrc, and LavaLyrics.
 2. Buka [railway.app](https://railway.app) → New Project → Deploy from GitHub repo
 3. Pilih repo ini
 4. Railway otomatis deteksi `Dockerfile` dan build
+5. Tambahkan variable berikut di tab **Variables**:
+
+## Railway Variables
+
+| Variable | Value | Keterangan |
+|---|---|---|
+| `_JAVA_OPTIONS` | `-Xmx512m` | **Wajib** — batasi RAM Java agar tidak crash |
+| `LAVALINK_SERVER_PASSWORD` | `password_kamu` | Opsional — ganti password tanpa edit file |
+
+> Jika pakai `LAVALINK_SERVER_PASSWORD`, ubah baris password di `application.yml` menjadi:
+> ```yaml
+> password: ${LAVALINK_SERVER_PASSWORD:youshallnotpass}
+> ```
 
 ## Konfigurasi Koneksi Bot
 
