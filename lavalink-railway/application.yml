@@ -5,6 +5,26 @@ server:
     enabled: false
 
 plugins:
+  lavasrc:
+    providers:
+      - "ytdlp:%QUERY%"
+      - "ytsearch:\"%ISRC%\""
+      - "ytsearch:%QUERY%"
+    sources:
+      spotify: false
+      applemusic: false
+      deezer: false
+      yandexmusic: false
+      flowerytts: false
+      youtube: false
+      vkmusic: false
+      tidal: false
+      qobuz: false
+      ytdlp: true
+      jiosaavn: false
+    ytdlp:
+      # kosongkan = pakai yt-dlp dari PATH (/usr/local/bin/yt-dlp)
+      executable: "yt-dlp"
   youtube:
     enabled: true
     allowSearch: true
