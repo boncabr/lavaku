@@ -1,0 +1,35 @@
+2026-07-26T05:00:44.002558548Z [inf]  scheduling build on Metal builder "builder-nctmjs"
+2026-07-26T05:00:45.898050983Z [inf]  unpacking archive
+2026-07-26T05:00:45.998448012Z [inf]  using build driver railpack-v0.33.0
+2026-07-26T05:00:46.003187497Z [inf]  uploading snapshot
+2026-07-26T05:00:46.324327384Z [inf]                     
+2026-07-26T05:00:46.324333834Z [inf]  [38;2;125;86;243m╭─────────────────╮[0m
+2026-07-26T05:00:46.324334816Z [inf]  [38;2;125;86;243m│[0m Railpack 0.33.0 [38;2;125;86;243m│[0m
+2026-07-26T05:00:46.324335497Z [inf]  [38;2;125;86;243m╰─────────────────╯[0m
+2026-07-26T05:00:46.324335957Z [inf]  
+2026-07-26T05:00:46.324337670Z [inf]    [97m↳ Detected Node[0m
+2026-07-26T05:00:46.324339753Z [inf]    [97m↳ Using pnpm package manager[0m
+2026-07-26T05:00:46.324340294Z [inf]    [97m↳ Found workspace with 7 packages[0m
+2026-07-26T05:00:46.324342707Z [inf]    [1;31m✖ No start command detected. Specify a start command: https://railpack.com/config/file[0m
+2026-07-26T05:00:46.324344680Z [inf]    
+2026-07-26T05:00:46.324346423Z [inf]    To configure your start command, Railpack will check:
+2026-07-26T05:00:46.324346863Z [inf]    
+2026-07-26T05:00:46.324347484Z [inf]    1. A "start" script in your package.json:
+2026-07-26T05:00:46.324347955Z [inf]       "scripts": {
+2026-07-26T05:00:46.324348396Z [inf]         "start": "node index.js"
+2026-07-26T05:00:46.324348786Z [inf]       }
+2026-07-26T05:00:46.324349277Z [inf]    
+2026-07-26T05:00:46.324349828Z [inf]    2. A "main" field in your package.json pointing to your entry file:
+2026-07-26T05:00:46.324350289Z [inf]       "main": "src/server.js"
+2026-07-26T05:00:46.324350649Z [inf]    
+2026-07-26T05:00:46.324351210Z [inf]    3. An index.js or index.ts file in your project root
+2026-07-26T05:00:46.324351631Z [inf]    
+2026-07-26T05:00:46.324352272Z [inf]    4. An Nx workspace with a Next.js app (nx.json + next)
+2026-07-26T05:00:46.324358060Z [inf]    
+2026-07-26T05:00:46.324360033Z [inf]    If you have a static site, you can set the RAILPACK_SPA_OUTPUT_DIR environment variable
+2026-07-26T05:00:46.324360684Z [inf]    containing the directory of your built static files.
+2026-07-26T05:00:46.324361255Z [inf]    
+2026-07-26T05:00:46.324361966Z [inf]    For multi-app Nx workspaces, set RAILPACK_NX_APP to select which app to deploy.
+2026-07-26T05:00:46.324366363Z [inf]  
+2026-07-26T05:00:46.324367024Z [inf]  
+2026-07-26T05:00:46.326795720Z [err]  railpack process exited with an error
