@@ -11,9 +11,10 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
-      - TV_EMBEDDED
-      - ANDROID
-      - WEB_REMIX
+      - IOS
+      - MUSIC
+      - WEB
+      - WEBEMBEDDED
     oauth:
       enabled: true
       skipInitialization: false
