@@ -11,13 +11,12 @@ plugins:
     allowDirectVideoIds: true
     allowDirectPlaylistIds: true
     clients:
-      - IOS
       - MUSIC
+      - IOS
       - WEB
       - WEBEMBEDDED
     oauth:
-      enabled: true
-      skipInitialization: false
+      enabled: false
 
 lavalink:
   plugins:
