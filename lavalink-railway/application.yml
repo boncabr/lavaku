@@ -19,14 +19,23 @@ plugins:
 
 lavalink:
   plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.4"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.1"
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
-    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.4.0"
+    - dependency: "com.github.topi314.lavasrc:lavasrc-plugin:4.8.3"
       repository: "https://maven.lavalink.dev/releases"
       snapshot: false
-    - dependency: "com.github.topi314.lavalyrics:lavalyrics-plugin:1.0.0"
+    - dependency: "com.github.topi314.lavalyrics:lavalyrics-plugin:1.6.6"
       repository: "https://maven.lavalink.dev/releases"
+      snapshot: false
+    - dependency: "com.github.topi314.lavasearch:lavasearch-plugin:1.0.0"
+      repository: "https://maven.lavalink.dev/releases"
+      snapshot: false
+    - dependency: "com.github.devoxin:LavaDSPX-Plugin:0.0.5"
+      repository: "https://jitpack.io"
+      snapshot: false
+    - dependency: "com.github.natanbc:lava-xm-plugin:0.2.8"
+      repository: "https://jitpack.io"
       snapshot: false
 
   server:
